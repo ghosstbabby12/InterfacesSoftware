@@ -1,103 +1,103 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex min-h-screen bg-[#18122B]">
+      {/* Panel ilustración */}
+      <div className="hidden lg:flex w-1/2 items-center justify-center bg-[#18122B] overflow-visible relative">
+        <div className="bg-[#393053] rounded-2xl w-[520px] h-[650px] flex items-center justify-center relative overflow-visible">
+          <img
+            src="https://media.tenor.com/e_yDx2QYYwYAAAAi/kuromi-sad.gif"
+            alt="Illustration"
+            className="w-[600px] h-[600px] object-contain absolute -right-15 top-1/2 -translate-y-1/2 drop-shadow-2xl"
+            style={{ zIndex: 50 }}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Panel formulario */}
+      <div className="flex w-full lg:w-1/2 items-center justify-center px-6">
+        <div className="w-full max-w-xl space-y-8 bg-[#393053] p-14 rounded-2xl shadow-lg">
+          <div className="text-right text-sm text-[#F7EFE5]">
+            Don’t have an account?{" "}
+            <a href="#" className="text-pink-300 hover:underline font-semibold">
+              Sign up
+            </a>
+          </div>
+
+          <h1 className="text-3xl font-bold text-white">Sign in</h1>
+          <div className="text-pink-200 text-sm mb-2">Sign in with Open account</div>
+
+          {/* Botones sociales */}
+          <div className="flex gap-4">
+            <button className="flex items-center justify-center w-1/2 border border-pink-300 bg-pink-300/20 text-white rounded-lg py-2 hover:bg-pink-300 hover:text-[#18122B] font-bold transition">
+              <img
+                src="https://media.tenor.com/ZQxzZ3xQx5kAAAAi/google.gif"
+                alt="Google"
+                className="w-5 h-5 mr-2"
+              />
+              <span>Google</span>
+            </button>
+            <button className="flex items-center justify-center w-1/2 border border-pink-300 bg-pink-300/20 text-white rounded-lg py-2 hover:bg-pink-300 hover:text-[#18122B] font-bold transition">
+              <img
+                src="https://media.tenor.com/Ff5sUTqnbgwAAAAi/star-tamil-chat-startamilchat.gif"
+                alt="Apple"
+                className="w-5 h-5 mr-2"
+              />
+              <span>Apple ID</span>
+            </button>
+          </div>
+
+          {/* Divider */}
+          <div className="flex items-center">
+            <div className="flex-1 h-px bg-pink-200"></div>
+            <span className="px-2 text-sm text-pink-200">
+              Or continue with email address
+            </span>
+            <div className="flex-1 h-px bg-pink-200"></div>
+          </div>
+
+          {/* Formulario */}
+          <form className="space-y-4">
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="example@.com"
+                className="w-full border border-pink-300 bg-[#18122B] text-white rounded-lg pl-10 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-300 placeholder:text-gray-400"
+              />
+              <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-pink-200">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Zm1.5 0V7.4l8.25 5.5a1 1 0 0 0 1.1 0l8.25-5.5V6.5a.5.5 0 0 0-.5-.5h-15a.5.5 0 0 0-.5.5Zm18 1.6-7.7 5.13a3 3 0 0 1-3.3 0L3.5 8.1V17.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V8.1Z" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div className="relative">
+              <input
+                type="password"
+                placeholder="••••••••"
+                className="w-full border border-pink-300 bg-[#18122B] text-white rounded-lg pl-10 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-300 placeholder:text-gray-400"
+              />
+              <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-pink-200">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm6-6V9a6 6 0 1 0-12 0v2a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2Zm-8-2a4 4 0 1 1 8 0v2H6V9Zm10 9a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5Z" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-pink-400 text-[#18122B] py-2 rounded-lg hover:bg-pink-300 font-semibold transition"
+            >
+              Start trading
+            </button>
+          </form>
+
+          <div className="flex items-center justify-between">
+            <label className="flex items-center space-x-2 text-sm text-pink-100">
+              <input type="checkbox" className="rounded bg-[#18122B] border-pink-300" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" className="text-sm text-pink-200 hover:underline font-semibold">
+              Forgot password?
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
